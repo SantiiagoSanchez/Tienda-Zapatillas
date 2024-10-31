@@ -24,8 +24,8 @@ namespace Presentacion.cs
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form1 formulario = new Form1();
-            formulario.Show();
             this.Hide();
+            formulario.Show();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

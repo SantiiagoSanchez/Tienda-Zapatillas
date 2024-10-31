@@ -48,7 +48,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion.cs.Properties.Resources.logozapa;
-            this.pictureBox1.Location = new System.Drawing.Point(109, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(117, -6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -61,7 +61,7 @@
             this.label1.BackColor = System.Drawing.Color.SkyBlue;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(123, 119);
+            this.label1.Location = new System.Drawing.Point(128, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 25);
             this.label1.TabIndex = 3;
@@ -71,7 +71,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(214, 155);
+            this.linkLabel1.Location = new System.Drawing.Point(223, 155);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(95, 17);
             this.linkLabel1.TabIndex = 13;
@@ -85,7 +85,7 @@
             this.label2.BackColor = System.Drawing.Color.SkyBlue;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 153);
+            this.label2.Location = new System.Drawing.Point(79, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 19);
             this.label2.TabIndex = 12;
@@ -97,7 +97,7 @@
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(16, 424);
+            this.checkBox1.Location = new System.Drawing.Point(22, 424);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(135, 17);
             this.checkBox1.TabIndex = 30;
@@ -107,7 +107,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(12, 216);
+            this.txtNombre.Location = new System.Drawing.Point(21, 216);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(340, 25);
@@ -119,7 +119,7 @@
             this.label4.BackColor = System.Drawing.Color.SkyBlue;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 193);
+            this.label4.Location = new System.Drawing.Point(20, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 20);
             this.label4.TabIndex = 24;
@@ -127,7 +127,7 @@
             // 
             // txtDocumento
             // 
-            this.txtDocumento.Location = new System.Drawing.Point(12, 272);
+            this.txtDocumento.Location = new System.Drawing.Point(21, 272);
             this.txtDocumento.Multiline = true;
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(340, 25);
@@ -139,7 +139,7 @@
             this.label3.BackColor = System.Drawing.Color.SkyBlue;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 249);
+            this.label3.Location = new System.Drawing.Point(20, 249);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 20);
             this.label3.TabIndex = 31;
@@ -147,7 +147,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(12, 327);
+            this.txtDireccion.Location = new System.Drawing.Point(21, 327);
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(340, 25);
@@ -159,7 +159,7 @@
             this.label5.BackColor = System.Drawing.Color.SkyBlue;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 304);
+            this.label5.Location = new System.Drawing.Point(17, 304);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 20);
             this.label5.TabIndex = 33;
@@ -167,7 +167,7 @@
             // 
             // txtContrasena
             // 
-            this.txtContrasena.Location = new System.Drawing.Point(12, 384);
+            this.txtContrasena.Location = new System.Drawing.Point(21, 384);
             this.txtContrasena.Multiline = true;
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(340, 25);
@@ -179,7 +179,7 @@
             this.label6.BackColor = System.Drawing.Color.SkyBlue;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 361);
+            this.label6.Location = new System.Drawing.Point(17, 361);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 20);
             this.label6.TabIndex = 35;
@@ -191,7 +191,7 @@
             this.btnCrearCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearCuenta.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearCuenta.ForeColor = System.Drawing.Color.White;
-            this.btnCrearCuenta.Location = new System.Drawing.Point(109, 461);
+            this.btnCrearCuenta.Location = new System.Drawing.Point(116, 461);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
             this.btnCrearCuenta.Size = new System.Drawing.Size(163, 34);
             this.btnCrearCuenta.TabIndex = 37;
@@ -204,7 +204,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(378, 507);
+            this.ClientSize = new System.Drawing.Size(399, 518);
             this.Controls.Add(this.btnCrearCuenta);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.label6);

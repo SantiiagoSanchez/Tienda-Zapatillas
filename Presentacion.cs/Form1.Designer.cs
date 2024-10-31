@@ -144,6 +144,7 @@
             this.btnIniciar.TabIndex = 19;
             this.btnIniciar.Text = "Iniciar sesión";
             this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // btnAdmin
             // 
