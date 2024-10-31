@@ -40,7 +40,7 @@ namespace Datos.cs
             catch (Exception e)
             {
 
-                throw new Exception("Error añ tratar de cerrar la conexion", e);
+                throw new Exception("Error al tratar de cerrar la conexion", e);
             }
         }
     }
