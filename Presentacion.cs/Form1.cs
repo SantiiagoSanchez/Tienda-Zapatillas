@@ -61,5 +61,12 @@ namespace Presentacion.cs
                 return;
             }
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            LoginAdmin Administrador = new LoginAdmin();
+            this.Hide();
+            Administrador.Show();
+        }
     }
 }

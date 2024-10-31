@@ -158,6 +158,7 @@
             this.btnAdmin.TabIndex = 20;
             this.btnAdmin.Text = "Soy administrador";
             this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // pictureBox1
             // 
