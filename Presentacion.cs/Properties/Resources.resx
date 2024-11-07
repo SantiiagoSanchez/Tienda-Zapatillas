@@ -121,4 +121,10 @@
   <data name="logozapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logozapa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="moradiño" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moradiño.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ceñeste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ceñeste.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

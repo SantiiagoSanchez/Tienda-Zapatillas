@@ -63,9 +63,29 @@ namespace Presentacion.cs.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ceñeste {
+            get {
+                object obj = ResourceManager.GetObject("ceñeste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logozapa {
             get {
                 object obj = ResourceManager.GetObject("logozapa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap moradiño {
+            get {
+                object obj = ResourceManager.GetObject("moradiño", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

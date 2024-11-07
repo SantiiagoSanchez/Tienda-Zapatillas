@@ -44,6 +44,7 @@
     <Compile Include="DatosAdmin.cs" />
     <Compile Include="DatosClientes.cs" />
     <Compile Include="DatosConexionDB.cs" />
+    <Compile Include="DatosProducto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

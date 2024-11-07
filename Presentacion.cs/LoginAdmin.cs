@@ -50,7 +50,7 @@ namespace Presentacion.cs
 
                 if (ValidarAdmin == true) 
                 {
-                    MessageBox.Show("Bienvenido Administrador", "¡Bienvenidx!");
+                    MessageBox.Show("Bienvenido/a Administrador", "¡Bienvenido/a!");
                     this.Hide();
                     AdministrarTienda formAdmin = new AdministrarTienda();
                     formAdmin.Show();
