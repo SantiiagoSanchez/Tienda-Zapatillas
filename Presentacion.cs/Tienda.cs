@@ -46,6 +46,8 @@ namespace Presentacion.cs
             }
         }
 
+        #region TOOLSTRIPCLICK
+
         private void zapatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DgvProductos.Rows.Clear();
@@ -413,5 +415,7 @@ namespace Presentacion.cs
                 MessageBox.Show("Nos quedamos sin stock en Louis Vuitton");
             }
         }
+
+        #endregion
     }
 }

@@ -66,6 +66,8 @@ namespace Datos.cs
         public DataSet listaProductos(string cual)
         {
             string orden = string.Empty;
+
+            #region CONSULTAS CATEGORIA
             if (cual == "Todos")
                 orden = "Select * from Producto;";
             //----------------------------------------------------
@@ -97,8 +99,8 @@ namespace Datos.cs
                 orden = "Select * from Producto where Categoria = 'Urbana' and Marca = 'Vans';";
             else if (cual == "Urbana Topper")
                 orden = "Select * from Producto where Categoria = 'Urbana' and Marca = 'Topper';";
-
-
+            #endregion
+            #region CONSULTAS MARCA
             else if (cual == "Nike")
                 orden = "Select * from Producto where Marca = 'Nike';";
             //------------------------------------------------------------------------------------------
@@ -119,7 +121,7 @@ namespace Datos.cs
             //------------------------------------------------------------------------------------------
             else if (cual == "Louis")
                 orden = "Select * from Producto where Marca = 'Louis Vuitton';";
-
+            #endregion
             OleDbCommand cmd = new OleDbCommand(orden, conexion);
             DataSet ds = new DataSet();
             OleDbDataAdapter da = new OleDbDataAdapter();
