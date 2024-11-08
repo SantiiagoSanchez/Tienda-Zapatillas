@@ -34,7 +34,7 @@ namespace Presentacion.cs
         {
             DGVProductos.Rows.Clear();
             DataSet ds = new DataSet();
-            ds = NegProducto.listaProductos("Todos");
+            ds = NegProducto.listaProductosAdmin("Todos");
             if (ds.Tables[0].Rows.Count > 0)
             {
                 foreach (DataRow dr in ds.Tables[0].Rows)
@@ -106,7 +106,7 @@ namespace Presentacion.cs
         {
             DataSet ds = new DataSet();
             EntProduto.IdProd = Convert.ToInt32(DGVProductos.CurrentRow.Cells[0].Value);
-            ds = NegProducto.listaProductos(EntProduto.IdProd.ToString());
+            ds = NegProducto.listaProductosAdmin(EntProduto.IdProd.ToString());
             if (ds.Tables[0].Rows.Count > 0)
             {
                 Ds_a_TxtBox(ds);

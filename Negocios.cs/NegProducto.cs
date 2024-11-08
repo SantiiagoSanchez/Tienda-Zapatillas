@@ -21,5 +21,10 @@ namespace Negocios.cs
         {
             return objDatosProducto.listaProductos(cual);
         }
+
+        public DataSet listaProductosAdmin(string cual) 
+        {
+            return objDatosProducto.listaProductosAdmin(cual);
+        }
     }
 }
