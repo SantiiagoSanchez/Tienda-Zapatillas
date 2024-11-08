@@ -141,5 +141,12 @@ namespace Presentacion.cs
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 Form = new Form1();
+            this.Hide();
+            Form.Show();
+        }
     }
 }
