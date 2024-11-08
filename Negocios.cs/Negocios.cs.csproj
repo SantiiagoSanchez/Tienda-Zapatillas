@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="NegAdmin.cs" />
     <Compile Include="NegCliente.cs" />
+    <Compile Include="NegProducto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
