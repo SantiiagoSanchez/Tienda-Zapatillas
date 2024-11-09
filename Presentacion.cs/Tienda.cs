@@ -1,4 +1,5 @@
-﻿using Negocios.cs;
+﻿using Entidades;
+using Negocios.cs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,11 @@ namespace Presentacion.cs
     public partial class Tienda : Form
     {
         public NegProducto NegProducto = new NegProducto();
+        public Producto EntProducto = new Producto();
+
+        public string NombreCalzado = string.Empty;
+        public string MarcaCalzado = string.Empty;
+        public string PrecioCalzado = string.Empty;
 
         public Tienda()
         {
@@ -26,6 +32,7 @@ namespace Presentacion.cs
             DgvProductos.Columns[4].HeaderText = "Precio";
             DgvProductos.Columns[5].HeaderText = "Stock";
             LlenarDGV();
+            btnAddCarrito.Visible = false;
         }
 
         private void LlenarDGV()
@@ -416,6 +423,55 @@ namespace Presentacion.cs
             }
         }
 
+
         #endregion
+
+
+        private void Ds_a_Stng(DataSet ds)
+        {
+            NombreCalzado = ds.Tables[0].Rows[0]["Nombre"].ToString();
+            MarcaCalzado = ds.Tables[0].Rows[0]["Marca"].ToString();
+            PrecioCalzado = ds.Tables[0].Rows[0]["Precio"].ToString();
+        }
+
+        private void btnAddCarrito_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("La zapatilla se añadio al carrito");
+        }
+
+
+        private void DgvProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnAddCarrito.Visible = true;
+            DataSet ds = new DataSet();
+            EntProducto.IdProd = Convert.ToInt32(DgvProductos.CurrentRow.Cells[0].Value);
+            ds = NegProducto.listaProductosAdmin(EntProducto.IdProd.ToString());
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                Ds_a_Stng(ds);
+            }
+        }
+
+        private void btnMiCarrito_Click(object sender, EventArgs e)
+        {
+            Products Zapatilla = new Products();
+            if (string.IsNullOrEmpty(NombreCalzado) && string.IsNullOrEmpty(MarcaCalzado) && string.IsNullOrEmpty(PrecioCalzado)) 
+            {
+                MessageBox.Show("No hay productos en el carrito", "Mi Carrito");
+                return;
+            }
+
+            Zapatilla.NombreDelCalzado = NombreCalzado;
+            Zapatilla.MarcaDelCalzado = MarcaCalzado;
+            Zapatilla.PrecioDelCalzado = Convert.ToInt32(PrecioCalzado);
+
+        }
+
+        public struct Products 
+        {
+            public string NombreDelCalzado;
+            public string MarcaDelCalzado;
+            public int PrecioDelCalzado;
+        }
     }
 }
