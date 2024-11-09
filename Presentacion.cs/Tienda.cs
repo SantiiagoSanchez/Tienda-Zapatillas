@@ -20,6 +20,7 @@ namespace Presentacion.cs
         public string NombreCalzado = string.Empty;
         public string MarcaCalzado = string.Empty;
         public string PrecioCalzado = string.Empty;
+        public string StockCalzado = string.Empty;
 
         public Tienda()
         {
@@ -432,6 +433,8 @@ namespace Presentacion.cs
             NombreCalzado = ds.Tables[0].Rows[0]["Nombre"].ToString();
             MarcaCalzado = ds.Tables[0].Rows[0]["Marca"].ToString();
             PrecioCalzado = ds.Tables[0].Rows[0]["Precio"].ToString();
+            StockCalzado = ds.Tables[0].Rows[0]["Stock"].ToString();
+
         }
 
         private void btnAddCarrito_Click(object sender, EventArgs e)
@@ -464,6 +467,11 @@ namespace Presentacion.cs
             Zapatilla.NombreDelCalzado = NombreCalzado;
             Zapatilla.MarcaDelCalzado = MarcaCalzado;
             Zapatilla.PrecioDelCalzado = Convert.ToInt32(PrecioCalzado);
+            Zapatilla.StockDelCalzado = Convert.ToInt32(StockCalzado);
+            MiCarrito FormCarrito = new MiCarrito(Zapatilla);
+            this.Hide();
+            FormCarrito.Show();
+            LimpiarString();
 
         }
 
@@ -472,6 +480,15 @@ namespace Presentacion.cs
             public string NombreDelCalzado;
             public string MarcaDelCalzado;
             public int PrecioDelCalzado;
+            public int StockDelCalzado;
+        }
+
+        public void LimpiarString() 
+        {
+            NombreCalzado = string.Empty;
+            MarcaCalzado = string.Empty;
+            PrecioCalzado = string.Empty;
+            StockCalzado = string.Empty;
         }
     }
 }
